@@ -358,10 +358,13 @@ header .works_nav ul {
 
 .content .happyo .iframe {
     width: 80%;
-    height: auto;
+    height: 100%;
 }
 
-
+/* .content .happyo .iframe iframe {
+    display: block;
+    height: 200%;
+} */
 
 
 
