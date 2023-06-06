@@ -20,7 +20,7 @@ body {
 
 .shadow {
     box-shadow: 20px 25px 25px 0 rgba(0, 0, 0, .25);
-        transition: .1s;
+    transition: .1s;
 }
 
 .shadow:hover {
@@ -42,7 +42,7 @@ header {
     max-width: 1200px;
 }
 
-header .logo a{
+header .logo a {
     font-size: 42px;
     display: flex;
     flex-direction: row;
@@ -65,8 +65,8 @@ header .logo a::before {
 }
 
 header .logo a:hover::before {
-background-color: #3C3C3C;
-transition: .3s;
+    background-color: #3C3C3C;
+    transition: .3s;
 }
 
 
@@ -123,7 +123,7 @@ nav p:hover {
 
 .works {
     margin: 130px 0 450px;
-    padding: 40px 0 0 ;
+    padding: 40px 0 0;
 }
 
 .works .works_ttl {
@@ -141,6 +141,7 @@ nav p:hover {
     align-items: center;
     margin: 0 0 130px;
 }
+
 .works .sinkyu .ttl {
     color: #ED7F99;
     font-size: 2em;
@@ -155,7 +156,8 @@ nav p:hover {
     line-height: 26px;
 }
 
-.works .web .web_ttl,.works .gra .gra_ttl{
+.works .web .web_ttl,
+.works .gra .gra_ttl {
     color: #ED7F99;
     font-size: 4em;
     font-weight: 600;
@@ -164,13 +166,40 @@ nav p:hover {
     margin: 0 0 50px;
 }
 
-.works .web .web_list,.works .gra .gra_list {
+.works .web .web_list,
+.works .gra .gra_list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 60px;
 }
+.works li {
+    position: relative;
+}
+
+.works li figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .40);
+    opacity: 0;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.works li figcaption:hover {
+    opacity: 1;
+}
+
 
 .works .gra {
     margin-top: 170px;
@@ -182,7 +211,8 @@ nav p:hover {
     justify-content: space-between;
 }
 
-.btn_area .about_btn p a,.gotop_btn p a{
+.btn_area .about_btn p a,
+.gotop_btn p a {
     display: block;
     font-size: 70px;
     font-weight: 600;
@@ -195,7 +225,8 @@ nav p:hover {
     transition: .4s;
 }
 
-.btn_area .about_btn p a:hover,.gotop_btn p a:hover {
+.btn_area .about_btn p a:hover,
+.gotop_btn p a:hover {
     background-color: #ED7F99;
 }
 
@@ -217,28 +248,34 @@ nav p:hover {
     0% {
         transform: translateY(300px);
     }
+
     1% {
         transform: translateY(310px);
     }
+
     10% {
         transform: translateY(120px);
     }
+
     60% {
         transform: translateY(120px);
     }
+
     62% {
         transform: translateY(80px);
     }
+
     70% {
         transform: translateY(300px);
     }
+
     100% {
         transform: translateY(300px);
     }
 }
 
 .btn_area .wai_dokan .dokan {
-    animation:  1s linear;
+    animation: 1s linear;
     animation-delay: 1s;
     transform: translateY(0px);
 }
@@ -272,7 +309,7 @@ nav p:hover {
     animation-timing-function: linear;
 }
 
-footer .footer_area{
+footer .footer_area {
     width: auto;
     margin: 50px auto 20px;
     padding: 0 100px 50px;
@@ -297,7 +334,7 @@ footer .footer_area nav {
 
 footer .copyright {
     font-size: 1.4em;
-    margin: 0 0 35px ;
+    margin: 0 0 35px;
     text-align: center;
 }
 
@@ -324,9 +361,11 @@ footer .copyright {
     0% {
         transform: translateY(450px);
     }
+
     60% {
         transform: translateY(0px);
     }
+
     100% {
         transform: translateY(20px);
     }
@@ -465,7 +504,8 @@ footer .copyright {
     margin: 0 0 100px;
 }
 
-.policy .ttl,.carrer .ttl {
+.policy .ttl,
+.carrer .ttl {
     margin-bottom: 30px;
 }
 
