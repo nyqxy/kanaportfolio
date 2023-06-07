@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 10px;
     background-color: #F5F5F5;
@@ -116,6 +120,40 @@ nav p:hover {
     padding: 70px 0 80px;
     background: url(../img/mv_copy_bg.png) no-repeat center;
 }
+
+.mv .scroll {
+    position: relative;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    font-size: 1.4em;
+}
+
+.mv .scroll::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 18px;
+    width: 1px;
+    height: 40px;
+    background-color: #3C3C3C;
+    animation: scroll 2s infinite;
+    overflow: hidden;
+}
+
+@keyframes scroll {
+    0% {
+        height: 0px;
+    }
+    50% {
+        height: 40px;
+    }
+    100% {
+        height: 0px;
+    }
+}
+
 
 .content {
     width: 1200px;
